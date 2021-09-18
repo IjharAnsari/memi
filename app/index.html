@@ -28,24 +28,70 @@
 </head>
 <body>
     <header class="d-flex justify-content-center fixed-top">
-        <div class="logo header p-3">
+        <div class="logo w-70 header p-3">
             <img style="width: 100px; height: 80px;" src="/app/image/memi-logo.jpg">
         </div>
     </header>
-    <section class="bread-crum htm">
-        <!-- <a href="/">Home</a><span>/config</span> -->
+    <section class="bread-crum htm d-flex justify-content-center">
+        <nav class="w-70" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">MeMi</a></li>
+              <li class="breadcrumb-item active" aria-current="page">config</li>
+            </ol>
+          </nav>
     </section>
     <div class="g-container mt-25 d-flex justify-content-center">
         <div class="config-div">
-            <div class="input-group">
+            <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="">First and last name</span>
                 </div>
                 <input type="text" class="form-control">
                 <input type="text" class="form-control">
-              </div>
+            </div>
+            <div class="input-group mb-3 align-items-center">
+                <div class="alert alert-info mb-0 me-3 p-2" role="alert">
+                    Levels ->
+                </div>
+                <div class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary p-2">Easy (5 digits)</button>
+                    <button type="button" class="btn btn-outline-secondary p-2">Medium (7 digits)</button>
+                    <button type="button" class="btn btn-outline-secondary p-2">Hard (10 digits)</button>
+                    <button type="button" class="btn btn-outline-secondary p-2">Custom/Expert (15,18,20 or 25 digits)</button>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="alert alert-info mb-0 me-3 p-2" role="alert">
+                    Choose digit counts of your choice
+                </div>
+                
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Digit Count</option>
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                  </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="alert alert-info mb-0 me-3 p-2" role="alert">
+                    Indicates, after how many seconds, digit will disappears
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Disappearance Time</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
         </div>
     </div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="containeklkr-fluid">
+            <img class="ms-3" style= "width: 40px;" src="/app/image/favicon-logo.jpg">
+            <span class="ms-3">copyright&copy;2021</span>
+        </div>
+    </nav>
 
     <script src="/app/js/bootstrap.min.js"></script>
 </body>
